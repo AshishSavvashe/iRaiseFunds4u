@@ -1,0 +1,244 @@
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ViewStyle"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:background="@color/appBGColor"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar"/>
+
+
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvRegisterCard"
+        style="@style/ViewStyle"
+        android:layout_weight="1"
+        android:fadeScrollbars="true"
+        android:fillViewport="false"
+        android:orientation="vertical"
+        android:scrollbarFadeDuration="3000"
+        android:scrollbarThumbVertical="@drawable/thumb_rv_scroll"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            style="@style/ViewStyle"
+            android:layout_marginBottom="@dimen/marginBottom_RegisterForm"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_RegisterForm">
+
+            <ImageView
+                android:layout_width="@dimen/width_AppLogo"
+                android:layout_height="@dimen/height_AppLogo"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/marginBottom_AppLogo"
+                android:src="@drawable/splashscreenlogo" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                app:hintTextAppearance="?android:textAppearanceSmall">
+
+                <EditText
+                    android:id="@+id/etCustName"
+                    style="@style/EditTextStyle_Register"
+                    android:hint="@string/lblNameReq"
+                    android:inputType="text"
+                    android:textColor="@color/appThemeColor"
+                    android:textColorHint="@color/disabledTextColor" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutPhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+                android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                app:hintTextAppearance="?android:textAppearanceSmall">
+
+                <EditText
+                    android:id="@+id/etCustPhNo"
+                    style="@style/EditTextStyle_Register"
+                    android:hint="@string/lblPhoneNoReq"
+                    android:inputType="phone"
+                    android:maxLength="13" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirmPhNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+                android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                app:hintTextAppearance="?android:textAppearanceSmall">
+
+                <EditText
+                    android:id="@+id/etCustConfirmPhNo"
+                    style="@style/EditTextStyle_Register"
+                    android:hint="@string/lblConfirmPhoneNoReq"
+                    android:inputType="phone"
+                    android:maxLength="13" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/txtInputLayoutPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+                    android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                    app:hintTextAppearance="?android:textAppearanceSmall">
+
+
+                    <EditText
+                        android:id="@+id/etCustPassword"
+                        style="@style/EditTextStyle_Register"
+                        android:hint="@string/lblPasswordReq"
+                        android:inputType="textEmailAddress" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <ImageView
+                    android:id="@+id/imgShowPassword"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/showpass"
+                    android:backgroundTint="@color/gray"/>
+
+
+                <!--<TextView
+                    android:id="@+id/tvShowPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Show"
+                    android:textAppearance="?android:attr/textAppearanceSmall"
+                    android:textColor="@color/appThemeColor"/>-->
+
+
+    </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirmPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+                android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                app:hintTextAppearance="?android:textAppearanceSmall">
+
+                <EditText
+                    android:id="@+id/etConfirmCustPassword"
+                    style="@style/EditTextStyle_Register"
+                    android:hint="@string/lblConfirmPasswordReq"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+
+                <ImageView
+                    android:id="@+id/imgConfirmPwd"
+                    android:layout_width="27dp"
+                    android:layout_height="27dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/showpass"
+                    android:backgroundTint="@color/gray"/>
+
+               <!-- <TextView
+                android:id="@+id/tvShowConfirmPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="35dp"
+                android:text="Show"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/appThemeColor"/>-->
+
+
+        </RelativeLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+                android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                app:hintTextAppearance="?android:textAppearanceSmall">
+
+                <EditText
+                    android:id="@+id/etCustEmailId"
+                    style="@style/EditTextStyle_Register"
+                    android:hint="@string/lblEmailIdReq"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutConfirmEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+                android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                app:hintTextAppearance="?android:textAppearanceSmall">
+
+                <EditText
+                    android:id="@+id/etConfirmCustEmailId"
+                    style="@style/EditTextStyle_Register"
+                    android:hint="@string/lblConfirmEmailIdReq"
+                    android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/txtInputLayoutBogoMemberId"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+                android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+                app:hintTextAppearance="?android:textAppearanceSmall">
+
+                <EditText
+                    android:id="@+id/etBogoMemberId"
+                    style="@style/EditTextStyle_Register"
+                    android:hint="@string/lblBOGOMemberIdReq"
+                    android:maxLength="16" />
+
+            </android.support.design.widget.TextInputLayout>
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+
+    <Button
+        android:id="@+id/btnRegister"
+        style="@style/ButtonStyleLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/appThemeColor"
+        android:minHeight="@dimen/minHeight_btnRegister"
+        android:text="@string/lblRegister"/>
+
+</LinearLayout>

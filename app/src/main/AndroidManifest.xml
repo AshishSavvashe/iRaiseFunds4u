@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.appbell.iraisefund4u">
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="10" />
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="true"
+        android:smallScreens="true"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <!-- Google login permissions -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+
+    <!-- Camera Permissions -->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.location"
+        android:required="false" />
+
+
+    <permission
+        android:name="com.appbell.iraisefund4u.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="com.appbell.iraisefund4u.permission.MAPS_RECEIVE"
+        android:protectionLevel="signature" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:hardwareAccelerated="true"
+        android:theme="@style/AppTheme.Toolbar">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/googleMapApiAndroidKey" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".resto.ui.SplashScreenActivity" />
+        <activity
+            android:name=".resto.ui.LandingOptionsActivity"
+            android:theme="@style/AppTheme.Toolbar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".resto.ui.UserLoginActivity"
+            android:parentActivityName=".resto.ui.LandingOptionsActivity"
+            android:theme="@style/AppTheme.Toolbar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".resto.ui.LandingOptionsActivity" />
+        </activity>
+        <activity
+            android:name=".resto.ui.RegisterCardActivity"
+            android:parentActivityName=".resto.ui.LandingOptionsActivity"
+            android:theme="@style/AppTheme.Toolbar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".resto.ui.LandingOptionsActivity" />
+        </activity>
+
+        <service android:name=".common.service.InstaFndrFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".resto.util.AlarmReceiver" />
+
+        <activity android:name=".resto.ui.VoucherBookListActivity" />
+        <activity android:name=".resto.ui.RedeemVoucherActivity" />
+        <activity android:name=".resto.ui.ChangePasswordActivity" />
+        <activity android:name=".resto.ui.VoucherListActivity" />
+        <activity
+            android:name=".resto.ui.WebViewActivity"
+            />
+        <activity android:name=".resto.ui.AddCardActivity"></activity>
+    </application>
+
+</manifest>

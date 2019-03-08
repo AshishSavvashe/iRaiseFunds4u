@@ -1,0 +1,166 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/appThemeColor</item>
+        <item name="colorPrimaryDark">@color/appThemeColor</item>
+        <item name="colorAccent">@color/appThemeColor</item>
+    </style>
+
+    <style name="AppTheme.Toolbar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="android:textColorPrimary">@color/black</item>
+        <item name="colorPrimary">@color/appThemeColor</item>
+        <item name="colorPrimaryDark">@color/appThemeColor</item>
+        <item name="colorAccent">@color/appThemeColor</item>
+        <item name="android:textAllCaps">false</item>
+       <!-- <item name="android:textViewStyle">@style/CommonTextStyle</item>
+        <item name="android:buttonStyle">@style/CommonButtonStyle</item>
+        <item name="android:checkboxStyle">@style/CheckBoxCommonStyle</item>-->
+    </style>
+
+    <!--Spinner Style-->
+    <style name="style_Spinner">
+        <item name="android:dropDownSelector">@color/appThemeColor</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+
+    <style name="CommonButtonStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/commonBtnMinHeight</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/appBodyTextColor</item>
+        <item name="android:fontFamily">@font/quicksand_fontfamily</item>
+    </style>
+
+    <style name="CheckBoxCommonStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:textViewStyle">@style/CommonTextStyle</item>
+    </style>
+
+
+    <style name="CommonTextStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/appBodyTextColor</item>
+        <item name="android:fontFamily">@font/quicksand_fontfamily</item>
+    </style>
+
+
+    <style name="ViewStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <!--**************** Login Screen **************************-->
+
+    <style name="EditTextStyleLogin" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:layout_marginLeft">15dip</item>
+        <item name="android:layout_marginRight">15dip</item>
+        <item name="android:layout_marginBottom">15dip</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textColorHint">@color/DarkSub</item>
+        <item name="android:background">@drawable/layout_border</item>
+        <item name="android:textColor">@color/app_textview_color</item>
+        <item name="android:imeOptions">flagNavigateNext</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="EditTextStyleLoginTab" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:layout_marginLeft">30dip</item>
+        <item name="android:layout_marginRight">30dip</item>
+        <item name="android:layout_marginBottom">30dip</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:background">@drawable/layout_border</item>
+        <item name="android:textColorHint">@color/DarkSub</item>
+        <item name="android:textColor">@color/app_textview_color</item>
+        <item name="android:imeOptions">flagNavigateNext</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="TextViewStyleLoginTab" parent="CommonTextStyle">>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textColor">@color/app_textview_color</item>
+    </style>
+
+    <style name="TextViewStyleLogin" parent="CommonTextStyle">>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/normalTextSize</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:background">@color/appBgColor</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="ButtonStyleLogin" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">40dip</item>
+        <item name="android:background">@drawable/button_bg_theme</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">5dip</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:paddingRight">5dip</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="ButtonStyleLoginTab" >
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dip</item>
+        <item name="android:background">@drawable/button_bg_theme</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:paddingLeft">10dip</item>
+        <item name="android:paddingRight">10dip</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:textStyle">normal</item>
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="EditTextStyle_Register" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/minHeight_editTxtRegister</item>
+        <item name="android:textSize">@dimen/headTextSize</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:padding">@dimen/padding_editTxtRegister</item>
+        <item name="android:textColor">@color/appThemeColor</item>
+        <item name="android:textColorHint">@color/disabledTextColor</item>
+        <item name="android:background">@drawable/edittext_line_style_selector</item>
+        <item name="android:longClickable">false</item>
+    </style>
+
+    <!--***************** END LOGIN SCREEN ******************-->
+
+    <!--***************** LANDING SCREEN ******************-->
+
+    <style name="Button_Style_LandingScreen" >
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">@dimen/minHeight_BtnLndScreen</item>
+        <item name="android:background">@drawable/button_bg_theme_outline</item>
+        <item name="android:textColor">@color/appThemeColor</item>
+        <item name="android:padding">@dimen/padding_btnRegisterCard</item>
+        <item name="android:textSize">@dimen/headerTextSize</item>
+        <item name="android:layout_marginLeft">@dimen/marginLeft_btnRegisterCard</item>
+        <item name="android:layout_marginRight">@dimen/marginRight_btnRegisterCard</item>
+        <item name="android:layout_marginTop">@dimen/marginTop_btnRegisterCard</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+
+</resources>

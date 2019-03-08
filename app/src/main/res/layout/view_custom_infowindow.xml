@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/linear"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minWidth="100dp"
+    android:padding="5dp">
+
+
+    <LinearLayout
+
+        android:background="@drawable/custom_marker_icon"
+        android:layout_width="wrap_content"
+        android:minWidth="230dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvRestoName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblRestoname"
+            android:textSize="14dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/tvRestoAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/lblRestoname"
+            android:ems="10"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="14dp"/>
+
+        <Button
+            android:id="@+id/btnViewCoupon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:minHeight="25dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="@string/viewcoupn"
+            android:textColor="@color/white"
+            android:textSize="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/green_corener_border"/>
+
+    </LinearLayout>
+</LinearLayout>
+
+<!--<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginTop="18dp">
+
+        <LinearLayout
+            android:id="@+id/linear"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:background="@drawable/custom_marker_icon"
+            android:padding="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvRestoName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblRestoname"
+                android:textSize="14dp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:textColor="@color/black"
+                android:id="@+id/tvRestoAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/lblRestoname"
+                android:ems="10"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textSize="14dp"/>
+
+            <Button
+                android:id="@+id/btnViewCoupon"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:minHeight="30dp"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:text="@string/viewcoupn"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/green_corener_border"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imgHideInfowindowo"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="right|top"
+        android:src="@drawable/close2"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"/>
+
+</RelativeLayout>-->
+
+
+
+

@@ -1,0 +1,26 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/ViewStyle"
+
+    android:background="@color/white"
+    android:gravity="center">
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/marginBottom_AppLogoLndScreen"
+        android:src="@drawable/splashscreenlogo" />
+
+    <Button
+        android:id="@+id/btnRegisterCard"
+        style="@style/Button_Style_LandingScreen"
+        android:text="@string/lblRegisterYourCard" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        style="@style/Button_Style_LandingScreen"
+        android:layout_marginBottom="@dimen/marginBottom_LoginBtnLndScreen"
+        android:text="@string/lblLogin" />
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<RelativeLayout android:id="@+id/rootViewForgotPwd"
+                style="@style/ViewStyle"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                >
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvForgotPwd"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/separator"
+        android:background="@color/appBGColor"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_LoginForm">
+
+            <LinearLayout
+                android:id="@+id/layoutForgotPwd"
+                style="@style/ViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appBGColor"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/paddingTop_layoutLgnId">
+
+                <ImageView
+                    android:layout_width="@dimen/width_UserNameIcon"
+                    android:layout_height="@dimen/height_UserNameIcon"
+                    android:layout_marginLeft="@dimen/marginLeft_UserNameIcon"
+                    android:layout_marginRight="@dimen/marginRight_UserNameIcon"
+                    android:padding="@dimen/padding_UserNameIcon"
+                    android:src="@drawable/ic_user"
+                    android:tint="@color/appThemeColor" />
+
+                <EditText
+                    android:id="@+id/etMobOrEmailId"
+                    style="@style/EditTextStyleLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_etLoginId"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/layout_bottom_border"
+                    android:backgroundTint="@color/disabledTextColor"
+                    android:ems="10"
+                    android:hint="@string/lblHintForgotPwd"
+                    android:inputType="text"
+                    android:textColor="@color/appThemeColor"
+                    android:textColorHint="@color/disabledTextColor"
+                    android:textSize="@dimen/headTextSize">
+
+                    <requestFocus/>
+                </EditText>
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnSubmit4Forgotpwd"
+                style="@style/ButtonStyleLogin"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/layoutMargin_btnLgnUsingIdPwd"
+                android:layout_marginLeft="@dimen/marginLeft_btnLogin"
+                android:layout_marginRight="@dimen/marginRight_btnLogin"
+                android:text="@string/lblSubmit"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
+

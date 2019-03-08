@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#309f3f</color>
+    <color name="colorAccent">#65b639</color>
+
+   <!-- //00b3a1-->
+    <color name="appThemeColor">#00b3a1</color>
+    <color name="appThemeAlterColor">#00665c</color>
+    <color name="appThemeContrastColor">#E6E6E6</color>
+    <color name="appFormBGColor">#dbdbdb</color>
+    <color name="appBGColor">#FFFFFF</color>
+    <color name="appHeaderTextColor">#FFFFFF</color>
+    <color name="appBodyTextColor">#000000</color>
+    <color name="appThemeLightColor">#e6f8ff</color>
+    <color name="appThemeLightColor2">#ccf1ff</color>
+
+
+    <color name="divider_color">#9f4336</color>
+    <color name="bottonBarSelectedBgColor">#fd745a</color>
+    <color name="listSelectedItemColor">#cecece</color>
+    <color name="list_background">#efefef</color>
+    <color name="listItemColor">#f0f0f0</color>
+    <color name="green">#01B14C</color>
+    <color name="lightGreen">#01cb59</color>
+    <color name="darkGray">#626262</color>
+    <color name="spinnerItemColor">#fbe7e7</color>
+    <color name="textColor1">#FE9A2E</color>
+    <color name="textColor2">#FE2E64</color>
+    <color name="textColor3">#4000FF</color>
+    <color name="loginTextColor">#2a1713</color>
+    <color name="bottonBarBgColor">#792313</color>
+    <color name="lightGray">#dbdbdb</color>
+    <color name="transparantlightGray">#80dbdbdb</color>
+
+    <color name="transparantBlack">#80626262</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="lightYellow">#FFFF99</color>
+
+    <color name="accent">#989393</color>
+    <color name="accentLight">#cac9c9</color>
+    <color name="loginScreenTextViewColor">#000000</color>
+    <color name="dashBoardRestoTitleColor">#FFFFFF</color>
+    <color name="cartItemCounterTextColor">#FFFFFF</color>
+    <color name="buffetHeaderTextColor">#000080</color>
+    <color name="buffetbgColor">#ffe1f0</color>
+    <color name="opaque">#bf000000</color>
+    <color name="blueShade">#ff33b5e5</color>
+
+    <color name="blue">#0000FF</color>
+    <color name="red">#e20c0c</color>
+    <color name="transperentred">#9CED0303</color>
+    <color name="tabIndicatorColor">#ffff00</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray">#9f9f9f</color>
+    <color name="app_backgroud">#fffafafa</color>
+    <color name="DarkMain">#ff404040</color>
+    <color name="BlueButtonBorder">#ff015e85</color>
+    <color name="BlueGradientStart">#ff0085bc</color>
+    <color name="BlueGradientEnd">#ff26aae1</color>
+    <color name="app_textview_color">#ff333333</color>
+    <color name="app_textview_color_selected">#818686</color>
+    <color name="color.shadow">#0a000000</color>
+    <color name="color.list.background">#ffffffff</color>
+    <color name="color.list.border">#ffd2d1d1</color>
+    <color name="DarkSub">#ff7f7f7f</color>
+    <color name="blueTextColor">#ff172e74</color>
+
+    <color name="veryLightGray">#e8e8e8</color>
+
+    <color name="purple">#800080</color>
+
+    <color name="appBgColor">#ecf0f5</color>
+    <color name="transparent">#28ffffff</color>
+    <color name="blueThemeColor">#33b5e5</color>
+    <color name="disabledTextColor">#4c777a</color>
+    <color name="disabledTextColorShade">#a7a7a7</color>
+    <color name="normalTextColor">#000000</color>
+    <color name="hintTextColor">#4c777a</color>
+    <color name="buttonColor">#124f7c</color>
+    <color name="buttonTextColor">#124f7c</color>
+    <color name="viewBgColor">#f9f9f9</color>
+
+    <color name="lightblue">#dbedfd</color>
+    <color name="spinercolor">#ccfffa</color>
+    <color name="purpal">#851430</color>
+    <color name="verylightgreen">#5cb85c</color>
+    <color name="lightgray">#e6e6e6</color>
+    <color name="bordercolor">#00e6cf</color>
+    <color name="actionbarcolor">#204060</color>
+
+
+</resources>

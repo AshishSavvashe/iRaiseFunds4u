@@ -1,0 +1,86 @@
+<LinearLayout android:id="@+id/viewLoginBg"
+              style="@style/ViewStyle"
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:background="@color/appThemeColor"
+              android:orientation="vertical">
+
+    <include layout="@layout/toolbar_login"/>
+
+
+     <LinearLayout
+         android:id="@+id/separator"
+         style="@style/ViewStyle"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_marginTop="30dp"
+         android:visibility="gone"
+         android:background="@drawable/shadow_bottom"
+         android:orientation="horizontal">
+
+         <View
+             android:layout_width="0dp"
+             android:layout_height="5dp"
+             android:layout_weight="1"
+             android:background="@color/gray"/>
+
+         <View
+             android:layout_width="0dp"
+             android:layout_height="5dp"
+             android:layout_weight="1"/>
+
+     </LinearLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nsvUserLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/separator"
+        android:background="@color/appBGColor"
+        android:fillViewport="true"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+        >
+
+            <FrameLayout
+                android:id="@+id/fragmentContainer4Login"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+            />
+
+            <LinearLayout
+                android:id="@+id/layoutBottomBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+            >
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="4dp"
+                    android:background="@drawable/shadow_gradient"/>
+
+                <Button
+                    android:id="@+id/btnForgotPwd"
+                    style="@style/ButtonStyleLogin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:minHeight="@dimen/minHeight_btnForgotPwd"
+                    android:text="@string/lblForgotPassword"
+                    android:textColor="@color/appThemeColor"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>
+

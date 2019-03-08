@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">InstaFundr</string>
+
+    <string name="Currency_Rs">\u20B9</string>
+    <string name="Currency_Dollar">$</string>
+    <string name="Currency_Euro">€</string>
+
+
+    <!--************ Commmon ***************************-->
+
+    <string name="lblSubmit">Submit</string>
+    <string name="lblCancel">Cancel</string>
+    <string name="lblOk">OK</string>
+    <string name="lblYesNo_Yes">Yes</string>
+    <string name="lblYesNo_NO">No</string>
+    <string name="lbladdtoCard">Add Card</string>
+
+
+    <!--************* Login Screen-->
+
+    <string name="lblTitleLogin">User&#160;&#160;Login</string>
+    <string name="lblLoginHeader">Enter your Mobile Number/Email Id and Password</string>
+
+    <string name="lblTitleForgotPwd">Forgot&#160;&#160;Password</string>
+    <string name="lblLoginHeader4ForgotPwd">Enter Mobile number or Email Id to retrieve password</string>
+
+    <string name="lblPasscode">Password</string>
+    <string name="lblLoginId">Mobile Number/Email Id</string>
+    <string name="lblLogin">Login</string>
+    <string name="lblLogout">Logout</string>
+    <string name="msgLogInSuccess">User logged in successfully...</string>
+    <string name="msgInValidLoginCredles">Invalid login credentials</string>
+    <string name="msgEnterLoginIdPWd">Please enter Mobile Number/Email Id &amp; Password</string>
+    <string name="lblForgotPassword">Forgot Password</string>
+    <string name="lblHintForgotPwd">Enter Mobile Number or Email Id</string>
+    <string name="lblBackToUserLogin">Back to User Login</string>
+    <string name="lblExistingUser">Existing User?\nTap here to Login</string>
+
+    <!--************* Register Screen ****************-->
+
+    <string name="lblRegisterYourCard">Register Your Card</string>
+    <string name="lblRegister">Register</string>
+
+    <string name="lblNameReq">Name *</string>
+    <string name="lblPhoneNoReq">Phone Number *</string>
+    <string name="lblConfirmPhoneNoReq">Confirm Phone Number *</string>
+    <string name="lblEmailIdReq">Email Address *</string>
+    <string name="lblConfirmEmailIdReq">Confirm Email Address *</string>
+    <string name="lblPasswordReq">New Password *</string>
+    <string name="lblConfirmPasswordReq">Confirm Password *</string>
+    <string name="lblBOGOMemberIdReq">BOGO Member Id *</string>
+
+    <string name="valMsgEnterName">Please enter your name</string>
+    <string name="valMsgEnterPhNo">Please enter your phone number</string>
+    <string name="valMsgPhNoConfirmPhNoNotMatch">Your phone number and confirmation phone number does not match</string>
+    <string name="valMsgEnterPassword">Please enter your password</string>
+    <string name="valMsgPassNotMatch">Your password and confirmation password does not match</string>
+    <string name="valMsgPhNoConfirmEmailNotMatch">Your Email and confirmation Email does not match</string>
+    <string name="valMsgEnterEmailId">Please enter your email address</string>
+    <string name="valMsgEnterValidEmailId">Please enter valid email address.</string>
+    <string name="valMsgEnterBOGOMemberId">Please enter your BOGO Member Id</string>
+    <string name="lblVoucherDetails">VoucherDetails</string>
+    <string name="spinner_title">Select Date</string>
+    <string name="redeem">Redeemed</string>
+    <string name="redemnote">Note : Show the Coupon to your Server at the time of payment before you click OK</string>
+    <string name="redemmsg">Once you select OK then you can not use this coupon later on, do you want to redeem this Coupon?</string>
+    <string name="redeemfailmsg">Error occured</string>
+    <string name="viewcoupn">View Coupon</string>
+
+    <string name="lblHintOldPassword">Old Password</string>
+    <string name="lblHintNewPassword">New Password</string>
+    <string name="lblHintConfirmPassword">Confirm Password</string>
+    <string name="lblChangePassword">Change Password</string>
+    <string name="lblRedeemReport">Coupon Redeem report</string>
+    <string name="lblContactUs">Contact Us</string>
+    <string name="lblMap">Map View</string>
+    <string name="lblRestoname">Restaurant Name</string>
+    <string name="lblcoupon">Coupon</string>
+    <string name="lblRedeemRate">Redeem Date</string>
+    <string name="requiredFieldValidationString">Required field cannot be blank</string>
+    <string name="lblPasswordOnlyAlphaNumeric">Password field allowed only Alphanumeric Character.</string>
+    <string name="msgEnterCorrectNewPwd">Password is not matching.</string>
+    <string name="msgPwdChange">Password changed successfully</string>
+    <string name="msgPwdNotChnage">Password could not change.Try Again</string>
+
+    <string name="googleMapApiAndroidKey">AIzaSyDUQM2kSTfY2lpOuk5PA7PJ775LteuvV9c</string>
+    <string name="buybookFailmsg">Error occured</string>
+
+</resources>

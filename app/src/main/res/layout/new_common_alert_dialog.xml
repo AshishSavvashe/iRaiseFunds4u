@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/txtViewHeaderTitle"
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="40dp"
+        android:gravity="left|center_vertical"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black"
+        android:padding="5dp"
+        android:paddingLeft="10dp"
+        android:text="@string/app_name"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/lightGray"/>
+
+    <TextView
+        android:id="@+id/txtViewDialogContent"
+        style="@style/CommonTextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left|center_vertical"
+        android:textColor="@color/black"
+        android:layout_marginLeft="5dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:minHeight="40dp"
+        android:padding="5dip" />
+
+    <LinearLayout
+        android:id="@+id/layoutBtn1"
+        style="?android:attr/buttonBarStyle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnNegative"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:lines="2"
+            android:padding="2dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/lblCancel"
+            android:background="@drawable/button_bg_theme"
+            android:textColor="@color/appHeaderTextColor"
+            android:layout_weight="0.5"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+
+        <Button
+            android:id="@+id/btnPositive"
+            style="@style/CommonTextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:lines="2"
+            android:padding="2dp"
+            android:text="OK"
+            android:textAllCaps="true"
+            android:layout_weight="0.5"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/button_bg_theme"
+            android:textColor="@color/appHeaderTextColor"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutBtn2"
+        style="?android:attr/buttonBarStyle"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="60dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"
+        android:padding="5dp" >
+
+        <Button
+            android:id="@+id/btnPositive2"
+            style="@style/CommonTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:minWidth="150dp"
+            android:lines="2"
+            android:padding="2dp"
+            android:text="OK"
+            android:gravity="center_horizontal|center_vertical"
+            android:background="@drawable/button_bg_theme"
+            android:textColor="@color/appHeaderTextColor"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

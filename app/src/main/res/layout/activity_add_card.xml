@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.appbell.iraisefund4u.resto.ui.AddCardActivity"
+    android:background="@color/white">
+    <include layout="@layout/toolbar" />
+
+    <LinearLayout
+
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:padding="5dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/txtInputLayoutBogoMemberId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginTop_TxtInputLayoutRegsiter"
+            android:padding="@dimen/padding_TxtInputLayoutRegsiter"
+            app:hintTextAppearance="?android:textAppearanceSmall">
+
+            <EditText
+                android:id="@+id/etBogoMemberId"
+                style="@style/EditTextStyle_Register"
+                android:hint="@string/lblBOGOMemberIdReq"
+                android:maxLength="16" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/btnAddToCard"
+            style="@style/ButtonStyleLogin"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/layoutMargin_btnLgnUsingIdPwd"
+            android:layout_marginLeft="@dimen/marginLeft_btnLogin"
+            android:layout_marginRight="@dimen/marginRight_btnLogin"
+            android:text="@string/lblSubmit"/>
+
+    </LinearLayout>
+</LinearLayout>

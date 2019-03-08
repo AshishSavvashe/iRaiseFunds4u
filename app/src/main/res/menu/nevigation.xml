@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/voucherList"
+        android:icon="@drawable/icon_rdeem_report"
+        android:title="Coupon List" />
+
+    <item
+        android:id="@+id/voucherReport"
+        android:icon="@drawable/icon_file"
+        android:title="Report" />
+
+
+    <item
+        android:id="@+id/mapview"
+        android:icon="@drawable/address_icon"
+        android:title="Map" />
+
+
+</menu>

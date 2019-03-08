@@ -1,0 +1,157 @@
+<RelativeLayout android:id="@+id/viewLoginBg"
+                style="@style/ViewStyle"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                >
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollviewAdLgn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/separator"
+        android:background="@color/appBGColor"
+        android:fillViewport="true"
+    >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/padding_LoginForm"
+        >
+
+
+            <LinearLayout
+                android:id="@+id/layoutLgnId"
+                style="@style/ViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/appBGColor"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/paddingTop_layoutLgnId"
+            >
+
+                <ImageView
+                    android:layout_width="@dimen/width_UserNameIcon"
+                    android:layout_height="@dimen/height_UserNameIcon"
+                    android:layout_marginLeft="@dimen/marginLeft_UserNameIcon"
+                    android:layout_marginRight="@dimen/marginRight_UserNameIcon"
+                    android:padding="@dimen/padding_UserNameIcon"
+                    android:src="@drawable/ic_user"
+                    android:textColor="@color/black"
+                    android:tint="@color/appThemeColor"
+                    android:textSize="@dimen/headTextSize"/>
+
+                <EditText
+                    android:id="@+id/etLoginId"
+                    style="@style/EditTextStyleLogin"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/height_etLoginId"
+                    android:layout_marginLeft="0dp"
+                    android:layout_weight="0.6"
+                    android:background="@drawable/layout_bottom_border"
+                    android:backgroundTint="@color/disabledTextColor"
+                    android:ems="10"
+                    android:hint="@string/lblLoginId"
+                    android:inputType="text"
+                    android:textColor="@color/appThemeColor"
+                    android:textColorHint="@color/disabledTextColor"
+                    android:textSize="@dimen/headTextSize">
+
+                    <requestFocus/>
+                </EditText>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLgnPwd"
+                style="@style/ViewStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layoutLgnId"
+                android:background="@color/appBGColor"
+                android:orientation="horizontal"
+                android:paddingTop="@dimen/paddingTop_layoutLgnPwd">
+
+                <ImageView
+                    android:layout_width="@dimen/width_UserNameIcon"
+                    android:layout_height="@dimen/height_UserNameIcon"
+                    android:layout_marginLeft="@dimen/marginLeft_UserNameIcon"
+                    android:layout_marginRight="@dimen/marginRight_UserNameIcon"
+                    android:padding="@dimen/padding_UserNameIcon"
+                    android:src="@drawable/ic_pwd_black"
+                    android:textColor="@color/black"
+                    android:tint="@color/appThemeColor"
+                    android:textSize="@dimen/headTextSize"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:minHeight="30dp"
+                    android:background="@drawable/layout_bottom_border"
+                    android:backgroundTint="@color/disabledTextColor"
+                    android:orientation="horizontal"
+                    android:layout_marginRight="15dp">
+
+
+                    <EditText
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/etLoginPwd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_weight="0.2"
+                        android:ems="10"
+                        android:background="@color/white"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                        android:textColor="@color/appThemeColor"
+                        android:textColorHint="@color/disabledTextColor"
+                        android:textSize="@dimen/headTextSize">
+                    </EditText>
+
+                    <ImageView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/imgPwd"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/showpass"
+                        android:backgroundTint="@color/gray"/>
+
+                   <!-- <TextView
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/tvShowPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/etLoginId"
+                        android:layout_marginRight="20dp"
+                        android:text="Show"
+                        android:textColor="@color/appThemeColor"
+                        android:textAppearance="?android:attr/textAppearanceSmall" />-->
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/btnLgnUsingIdPwd"
+                style="@style/ButtonStyleLogin"
+                android:layout_width="match_parent"
+                android:layout_margin="@dimen/layoutMargin_btnLgnUsingIdPwd"
+                android:layout_marginLeft="@dimen/marginLeft_btnLogin"
+                android:layout_marginRight="@dimen/marginRight_btnLogin"
+                android:text="@string/lblLogin"/>
+
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</RelativeLayout>
+
